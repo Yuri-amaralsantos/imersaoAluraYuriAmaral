@@ -34,7 +34,23 @@ Ao executar o sistema, você pode:
 - 🧪 `google.adk` (AI Development Kit)
 - 📦 `dotenv` para gerenciamento seguro da chave da API
 
----
+--- 
+
+## ▶️ Como usar
+### Clone o repositório:
+git clone https://github.com/seuusuario/redacao-ia.git
+cd redacao-ia
+
+### Instale as dependências:
+pip install -r requirements.txt
+
+### Configure a chave da API:
+Crie um arquivo .env e adicione sua chave do Google AI:
+GOOGLE_API_KEY=sua_chave_aqui
+
+### Execute o chatbot:
+python main.py
+
 
 ## 📂 Estrutura dos agentes
 
