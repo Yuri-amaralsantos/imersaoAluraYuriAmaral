@@ -1,42 +1,67 @@
-🧠 Agentes de IA para Redação — Seu assistente completo de escrita com Inteligência Artificial
-Gere temas. Corrija textos. Veja exemplos prontos. Tudo com IA.
+# 🧠 Redação IA: Um sistema de agentes inteligentes para ensino de redação
 
-Você está desenvolvendo um sistema de ensino, uma plataforma de estudos ou apenas quer praticar redação com qualidade? Este conjunto de agentes de IA é feito para automatizar três etapas essenciais da produção textual:
+**Redação IA** é um sistema interativo de agentes desenvolvidos com **Python** e **Gemini (Google AI)**, que simula a experiência de um professor de redação. O projeto combina **geração de temas**, **criação de redações exemplo** e **avaliação automática** com feedback detalhado, como em uma aula real.
 
-✍️ O que este projeto faz?
-Combinando Python e Gemini, este sistema executa uma cadeia inteligente de tarefas:
+---
 
-🧩 1. Geração de Tema
-Receba sugestões de temas relevantes, atuais e adequados a diferentes gêneros textuais (como dissertativo-argumentativo).
+## 🚀 O que o sistema faz?
 
-Exemplo: “Os impactos da inteligência artificial no mercado de trabalho.”
+Este projeto reúne **três agentes principais** que trabalham juntos para melhorar sua escrita:
 
-🕵️ 2. Correção Automática
-Envie sua redação e receba uma correção detalhada, com feedback sobre:
+| Agente | Função |
+|-------|--------|
+| 🧑‍🏫 `agente_tutor` | Gera temas de redação dissertativa-argumentativa com contextualização |
+| ✍️ `agente_aluno` | Produz uma redação exemplo a partir do tema |
+| 🖊️ `agente_corretor` | Avalia qualquer redação com base no tema, destacando pontos fortes e fracos |
 
-Gramática e ortografia
+---
 
-Coesão e coerência
+## 💡 Exemplos de uso
 
-Argumentação e estrutura
+Ao executar o sistema, você pode:
 
-📚 3. Redação Exemplo Gerada por IA
-Com base no tema proposto, a IA pode gerar uma redação completa modelo para você estudar e comparar.
+- Receber um **tema atual e contextualizado** para praticar
+- Solicitar uma **redação modelo gerada pela IA**
+- Escrever seu próprio texto e receber uma **correção detalhada**
+- Solicitar **novos temas** a qualquer momento
 
-Uma forma inteligente de aprender com bons exemplos!
+---
 
-🚀 Por que usar este projeto?
-✅ Ideal para plataformas de educação, tutores de redação e estudantes
-✅ Modular: você pode usar cada parte separadamente
-✅ Fácil de integrar via Python
-✅ Baseado em Gemini, a IA generativa da Google
-✅ Preparado para interfaces web ou chatbots
+## 🛠️ Tecnologias utilizadas
 
-🛠️ Tecnologias e Ferramentas
-Python 3.10+
+- 🐍 **Python 3.10+**
+- 🌐 [Gemini API (Google Generative AI)](https://ai.google.dev/)
+- 🧪 `google.adk` (AI Development Kit)
+- 📦 `dotenv` para gerenciamento seguro da chave da API
 
-Gemini API (Google)
+---
 
-dotenv para configuração segura
+## 📂 Estrutura dos agentes
 
+Cada agente é criado com instruções específicas que definem seu comportamento e tom:
+
+agente_tutor = Agent(name="agente_tutor", instruction="Você é um professor de redação...")
+agente_aluno = Agent(name="agente_aluno", instruction="Você é um aluno que escreve redações...")
+agente_corretor = Agent(name="agente_corretor", instruction="Você é um corretor de redações...")
+
+
+
+## 🧠 Exemplo de execução
+📚 Bem-vindo ao Professor de Redação Interativo com IA!
+
+Etapa 1: Gerando tema...
+📖 Tema proposto:
+Tema: Os impactos das redes sociais no comportamento social
+[texto de contextualização]
+
+> Digite sua redação ou escolha: 'exemplo', 'mudar tema', 'sair':
+
+## 📌 Possíveis aplicações
+- Plataformas educacionais e EAD
+
+- Assistentes virtuais de correção de texto
+
+- Bots para prática de escrita para ENEM ou concursos
+
+- Ferramentas para professores e corretores automatizados
 
